@@ -1,4 +1,5 @@
-.errorMessage {
-    color: #ff0000;
-    font-weight: 700;
-  }
+import style from "./ErrorMessage.module.css";
+
+export default function ErrorMessage({ error }) {
+  return <div className={style.errorMessage}>{error}</div>;
+}
